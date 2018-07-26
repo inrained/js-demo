@@ -1,0 +1,90 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper{
+	width: 100%;
+	height:100%;
+
+}
+#photo{
+	width:800px;
+	height: 270px;
+	margin: 50px auto;
+	position: relative;
+
+}
+#leftphoto{
+	width: 320px;
+	height: 180px;
+	background-image: url(img/6.jpg);
+	background-size: cover;
+	position: absolute;
+	top:45px;
+	left:0px;
+}
+#midphoto{
+	width: 480px;
+	height: 270px;
+	background-image: url(img/1.jpg);
+	background-size: cover;
+	position: absolute;
+	left:160px;
+}
+#rightphoto{
+	width: 320px;
+	height: 180px;
+	background-image: url(img/2.jpg);
+	background-size: cover;
+	position: absolute;
+	left:480px;
+	top:45px;
+}
+.mask{
+	background-color: gray;
+	opacity: 0.5;
+	width: 320px;
+	height: 180px;
+}
+#up{
+	width:30px;
+	height: 35px;
+	position: absolute;
+	left:0px;
+	top:135px;
+	background-color:#FFBBFF;
+	text-align: center;
+	padding-top: 15px;
+	cursor: pointer;
+	color: gray;
+}
+#down{
+	width:30px;
+	height: 35px;
+	position: absolute;
+	right:0px;
+	top:135px;
+	background-color: #FFBBFF;
+	text-align: center;
+	padding-top: 15px;
+	cursor: pointer;
+	color: gray;
+}
+#allstr{	
+	width:420px;
+	height:10px;
+	position: absolute;
+	top:320px;
+	left:195px;
+}
+.str{
+	height:5px;
+	width: 60px;
+	background-color: #EEE8CD;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#str1{
+	background-color: #AEEEEE;
+}
