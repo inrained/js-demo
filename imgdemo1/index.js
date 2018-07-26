@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload=function(){
     var index=1;
     
      function photoleft(ind){
@@ -38,10 +38,17 @@ $(document).ready(function(){
         photoright(index); 
     });
 
+  var time=setInterval(function(){if(index==6)index=1;
+        else index++;
+        photomid(index);
+        photoleft(index);               
+        photoright(index);},3000);
+
     var str=document.getElementsByClassName('str');
     for(var i=0;i<6;i++){
         str[i].no=i+1;
         str[i].onclick=function(){
+           
             $("#str"+index).css("background-color","#EEE8CD");
             index=this.no;     
             photoleft(index);               
@@ -56,11 +63,7 @@ $(document).ready(function(){
             
         
     }
-    setInterval(function(){if(index==6)index=1;
-        else index++;
-        photomid(index);
-        photoleft(index);               
-        photoright(index);},3000);
+  
 
     
 
@@ -69,4 +72,4 @@ $(document).ready(function(){
 
 
 
-})
+}
